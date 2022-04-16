@@ -54,8 +54,8 @@ body {
   background-repeat: no-repeat;
   height: 100vh;
   min-height: 400px;
-  background-image: url("../img/backround2.jpg");
   background-position: center center;
+  background-image: url("img/backround2.jpg");
 }
 
 #header .content {

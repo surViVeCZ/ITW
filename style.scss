@@ -45,14 +45,15 @@ body{
     background: rgba(0, 0, 0, 0.4);
 }
 
+
  #header{
     text-align: center;
     background-size: cover;
     background-repeat: no-repeat;
     height: 100vh;
     min-height: 400px;
-    background-image:  url('../img/backround2.jpg');
     background-position: center center;
+    background-image:  url('img/backround2.jpg');
 
 }
 #header .content{
