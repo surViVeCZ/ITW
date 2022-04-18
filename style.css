@@ -9,12 +9,7 @@
  */
 /*variables for colors*/
 @import url("https://fonts.googleapis.com/css?family=Poppins:900i");
-:root {
-  --basic: #898989;
-  --light: #bfbfbf;
-  --dark: #4d4d4d;
-  --almost_white: #f7f7f7;
-}
+
 
 html {
   scroll-behavior: smooth;
@@ -117,17 +112,12 @@ body {
 }
 
 .logo {
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
   position: relative;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   margin-top: auto;
   margin-bottom: auto;
   vertical-align: middle;
-  -webkit-transition: all 0.3s ease-in-out 0s;
   transition: all 0.3s ease-in-out 0s;
 }
 
@@ -165,6 +155,7 @@ body {
 .navigation .logoa {
   padding: 0px;
   margin: 0px;
+  margin-right: 140px;
 }
 
 .navigation {
@@ -236,7 +227,6 @@ body {
 
 /*hover creates underline*/
 .expand {
-  width: -webkit-min-content;
   width: -moz-min-content;
   width: min-content;
   padding: 10px;
@@ -430,16 +420,9 @@ path.two {
 
 /*contacts in header*/
 #contacts {
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  display: -webkit-box;
-  display: -ms-flexbox;
+  align-items: center;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  flex-direction: column;
   position: absolute;
   top: 0px;
   margin: 100px 0;
@@ -447,7 +430,7 @@ path.two {
   padding-right: 20px;
 }
 
-.fa {
+#contacts .fa {
   color: white;
   margin-top: 35px;
   margin-right: 20px;
@@ -458,32 +441,24 @@ path.two {
 }
 
 .fa-instagram {
-  width: -webkit-max-content;
-  width: -moz-max-content;
   width: max-content;
   margin-left: auto;
   margin-right: auto;
 }
 
 .fa-facebook-f {
-  width: -webkit-max-content;
-  width: -moz-max-content;
   width: max-content;
   margin-left: auto;
   margin-right: auto;
 }
 
 .fa-youtube {
-  width: -webkit-max-content;
-  width: -moz-max-content;
   width: max-content;
   margin-left: auto;
   margin-right: auto;
 }
 
 .fa-twitter {
-  width: -webkit-max-content;
-  width: -moz-max-content;
   width: max-content;
   margin-left: auto;
   margin-right: auto;
@@ -511,9 +486,10 @@ path.two {
 /*--------------About-------------------*/
 #about {
   padding-top: 60px;
-  padding-bottom: 80px;
+  padding-bottom: 60px;
   background-color: black;
   color: white;
+  font-family: 'Lobster', cursive;
   text-align: center;
 }
 
@@ -547,7 +523,6 @@ path.two {
 
 .timeline {
   float: left;
-  background: var(--primary-color);
   margin: 20px auto;
   padding: 20px;
 }
@@ -561,7 +536,7 @@ path.two {
 }
 
 .outer {
-  border-left: 2px solid #333;
+  border-left: 3px solid #ABABAB;
 }
 
 /* Card container */
@@ -589,8 +564,7 @@ path.two {
 /* Title of the card */
 .title {
   color: orange;
-  position: relative;
-  font-family: 'Satisfy', cursive;
+  font-family: 'Lobster', cursive;
   font-size: 30px;
 }
 
@@ -602,15 +576,24 @@ path.two {
   height: 10px;
   background: white;
   border-radius: 100%;
-  left: -40px;
+  left: -30px;
   border: 3px solid orange;
 }
 
 /*-----------------------services----------------------- */
+
 #services {
   text-align: center;
-  padding-top: 60px;
-  padding-bottom: 80px;
+padding-top: 60px;
+  padding-bottom: 60px;
+background-image: url("img/backround3.jpg");
+background-size: cover;
+ background-repeat: no-repeat;
+
+}
+#services h3{
+ color: #FFA200
+font-family: 'Lobster', cursive;
 }
 
 #services .content > div {
@@ -623,30 +606,31 @@ path.two {
   height: max-content;
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 500px 500px;
-      grid-template-columns: 500px 500px;
+  -ms-grid-columns: 1200px;
+      grid-template-columns: 1200px;
   gap: 40px;
-  padding-bottom: 50px;
+  padding-bottom: 120px;
 }
 
-#services .services-card:hover div img:first-child {
-  display: none;
+#services .services-card{
+backdrop-filter: grayscale(0.9) opacity(0.9) blur(6px);
+ 
+
+
 }
 
 #services .services-card:hover div img:last-child {
   display: initial;
-  -webkit-transform: scale(1.3);
-          transform: scale(1.3);
+  transform: scale(1.3);
 }
 
 #services .services-card:hover {
-  -webkit-box-shadow: 0 0 15px 0 orange;
-          box-shadow: 0 0 15px 0 orange;
-  border: 0px;
+  -webkit-box-shadow: 0 0 25px 0 orange;
+          box-shadow: 0 0 25px 0 orange;
 }
 
 #services .services-card:hover h3 {
-  color: orange;
+  color: #AD730E;
 }
 
 #services .services-card > div {
@@ -664,27 +648,42 @@ path.two {
   padding-bottom: 10px;
 }
 
+#services .first_par{
+  font-family: 'Lobster', cursive;
+color: black;
+text-align: left;
+margin-right: 390px;
+padding-bottom: 20px;
+}
+
 #services img {
   margin: 5px;
-  border-radius: 5px;
   height: 50px;
   width: 50px;
 }
 
 #services .services-card p {
-  color: var(--light);
+  color: #929292;
+  font-family: 'Lobster', cursive;
 }
 
+#services .services-card:hover p{
+  color: #AD730E;
+}
+
+
 .services-card {
-  -webkit-box-shadow: 0 0 5px 0 orange;
-          box-shadow: 0 0 5px 0 orange;
+  -webkit-box-shadow: 0 0 20px 0 grey;
+          box-shadow: 0 0 20px 0 grey;
   padding: 10px;
-  border-radius: 5px;
+  border-radius: 40px;
 }
 
 #services .services-card {
+padding: 40px;
   position: relative;
 }
+
 
 #services .services-card h3:after {
   display: block;
@@ -714,9 +713,8 @@ path.two {
   position: relative;
   -webkit-transform: translateY(150px);
           transform: translateY(150px);
-  opacity: 0;
-  -webkit-transition: 1s all ease;
   transition: 1s all ease;
+  opacity: 0;
 }
 
 .reveal.active {
@@ -725,13 +723,12 @@ path.two {
   opacity: 1;
 }
 
-/*flipping image*/
+
 .flip-container {
+  perspective: 800;
   margin: 50px;
   margin-top: 10px;
   float: left;
-  -webkit-perspective: 1000;
-          perspective: 1000;
 }
 
 .flip-container:hover .card2 {
@@ -771,4 +768,379 @@ path.two {
   -webkit-transform: rotateY(0deg);
           transform: rotateY(0deg);
 }
-/*# sourceMappingURL=style.css.map */
+
+
+
+/*-----------------------achievements----------------------- */
+#achievements {
+  padding-top: 60px;
+  padding-bottom: 60px;
+   background-color: orange;
+  color: white;
+  text-align: center;
+
+}
+
+
+#achievements img{
+  margin: auto;
+  width: 60%;
+  padding: 10px;
+  border-radius: 20px;
+}
+#achievements h3{
+  font-size: 38px;
+  font-family: 'Lobster', cursive; 
+}
+
+#achievements .carousel{
+   display: flex;
+border-radius: 25px;
+}
+#achievements .button_left, .button_right{
+width: min-content;
+height: min-content;
+margin: auto;
+text-decoration: none;
+font-size: 50px;
+border: 1px solid white;
+padding-right: 20px;
+padding-left: 20px;
+border-radius: 100%;
+text-align: center;
+transition: all 0.7s ease-in-out;
+}
+#achievements .button_left:hover, .button_right:hover {
+transform: scale(1.3);
+ transition: all 0.7s ease-in; 
+background-color:grey;
+border: 1px solid grey;
+color:white;
+}
+
+/*-----------------------price----------------------- */
+
+#price {
+  padding-top: 60px;
+  padding-bottom: 60px;
+ background-color: white
+  color: black
+  text-align: center;
+ 
+ 
+}
+
+#price h2 {
+text-align: center;
+}
+
+#price p {
+font-family: 'Lobster', cursive;
+}
+
+.pricelist {
+display: flex;
+justify-content: space-between;
+}
+
+.my_service{
+  font-family: 'Lobster', cursive;
+  width: 33.33%;
+  height:100%;
+  padding: 0px;
+  list-style-type: none;
+  border: 1px solid #eee;
+  margin: 10px;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+.my_service .header {
+  background-color: #4d4d4d; 
+  color: white;
+  font-size: 22px;
+  font-family: 'Lobster', cursive;
+}
+.my_service li {
+  border-bottom: 1px solid #eee;
+  padding: 20px;
+  text-align: center;
+}
+.my_service .price {
+  background-color: #A09E9C;
+  font-size: 25px;
+  letter-spacing: .2rem;
+  color:orange;
+}
+
+#price .button {
+  background-color: orange;
+  border-radius: 5px;
+  color: white;
+  padding: 10px 25px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 18px;
+}
+
+#price .button:hover {
+  background-color: #04AA6D;
+} 
+
+@media only screen and (max-width: 600px) {
+  .columns {
+    width: 100%;
+  }
+}
+
+/*-----------------------contacts----------------------- */
+
+#contact {
+  padding-bottom: 180px;
+ padding-top: 60px;
+ background-color: black;
+  color: white;
+  text-align: center;
+  flex-direction: column;
+  font-family: 'Lobster', cursive;
+}
+
+.my-contacts{
+	padding-top: 80px;
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-top: 30px;
+}
+
+.contacts-left{
+	width: 40%;
+	display:flex;
+	flex-direction: column;
+}
+
+.contact-member{
+	display:flex;
+	position: relative;
+	padding: 20px 0;
+}
+.my-contacts h3{
+margin-bottom: 0px;
+}
+.my-contacts p{
+margin-top: 0px;
+}
+
+.my-contacts .icon{
+        font-size: 35px;
+	min-width: 60px;
+	height: 60px;
+	background: orange;
+	justify-content: center;
+	border-radius: 50%;
+}
+
+.my-contacts .text{
+	display:flex;
+        text-align: left;
+        margin-top: -30px;
+	margin-left: 40px;
+	font-size: 16px;
+	flex-direction: column;
+}
+.my-contacts h3{
+	color: orange;
+}
+
+.contactForm{
+	border-radius: 15px;
+	width: 60%;
+	padding: 40px;
+	background: white;
+	color:black;
+}
+.contactForm h2{
+	font-size: 30px;
+	color:orange;
+}
+
+.contactForm .inputBox{
+	position: relative;
+	width: 100%;
+	margin-top: 10px;
+}
+
+.contactForm .inputBox input, .contactForm .inputBox textarea{
+	width: 100%;
+	padding: 5px 0;
+	font-size: 16px;
+	margin: 10px 0;
+	border: none;
+	border-bottom: 2px solid black;
+	outline: none;
+}
+
+
+
+.inputBox p{
+	position: absolute;
+	left: 0;
+	font-size: 16px;
+	margin: -40px 0;
+	width:auto;
+	pointer-events: none;
+	transition: 0.7s;
+	color: orange;
+}
+.inputBox p.aaa{
+	position: absolute;
+	left: 0;
+	font-size: 16px;
+	margin: -70px 0;
+	width:auto;
+	pointer-events: none;
+	transition: 0.7s;
+	color: orange;
+}
+
+
+
+.contactForm .inputBox textarea:focus ~ p, .contactForm .inputBox textarea:valid ~ p{
+	color: red;
+	font-size: 14px;
+	transform: translateY(-20px);
+}
+
+.contactForm .inputBox input:focus ~ p, .contactForm .inputBox input:valid ~ p{
+	color: red;
+	font-size: 14px;
+	transform: translateY(-20px);
+}
+
+
+.contactForm .inputBox input[type="submit"]{
+	width: 100px;
+	background: orange;
+	color: white;
+	border:none;
+	cursor:pointer;
+	padding: 10px;
+	font-size: 18px;
+}
+
+@media (max-width: 768px){
+	.contact{
+		padding: 50px;
+	}
+	.my-contacts{
+		flex-direction: column;
+	}
+	.my-contacts .contactForm{
+		width: 90%;
+	}
+#contact h2{
+ float:left;
+}
+
+#contact .contacts-content{
+	background-color:red;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
