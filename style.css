@@ -420,9 +420,16 @@ path.two {
 
 /*contacts in header*/
 #contacts {
-  align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   position: absolute;
   top: 0px;
   margin: 100px 0;
@@ -430,7 +437,7 @@ path.two {
   padding-right: 20px;
 }
 
-#contacts .fa {
+.fa {
   color: white;
   margin-top: 35px;
   margin-right: 20px;
@@ -441,24 +448,32 @@ path.two {
 }
 
 .fa-instagram {
+  width: -webkit-max-content;
+  width: -moz-max-content;
   width: max-content;
   margin-left: auto;
   margin-right: auto;
 }
 
 .fa-facebook-f {
+  width: -webkit-max-content;
+  width: -moz-max-content;
   width: max-content;
   margin-left: auto;
   margin-right: auto;
 }
 
 .fa-youtube {
+  width: -webkit-max-content;
+  width: -moz-max-content;
   width: max-content;
   margin-left: auto;
   margin-right: auto;
 }
 
 .fa-twitter {
+  width: -webkit-max-content;
+  width: -moz-max-content;
   width: max-content;
   margin-left: auto;
   margin-right: auto;
