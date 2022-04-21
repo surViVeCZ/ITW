@@ -762,7 +762,7 @@ body {
 }
 
 #header-title h1 {
-  padding-top: 220px;
+  padding-top: 110px;
   font-size: 100px;
   color: white;
   font-family: 'Satisfy', cursive;
@@ -894,6 +894,7 @@ body {
   #header-title h1 {
     font-size: 45px;
     text-align: center;
+    padding-top: 220px;
   }
   #header-title h2 {
     font-size: 35px;
