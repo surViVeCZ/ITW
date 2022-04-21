@@ -207,13 +207,14 @@
             flex-direction: column;
   }
   .my-contacts .contactForm {
-    width: 90%;
+    width: 100%;
   }
   #contact .contacts-content {
     background-color: black;
   }
   #contact .contacts-left {
     width: 100%;
+    margin-left: -35px;
   }
   #contact .my-contacts {
     padding-top: 0px;

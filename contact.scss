@@ -168,7 +168,7 @@
 	.my-contacts {
 		flex-direction: column;
 		.contactForm {
-			width: 90%;
+			width: 100%;
 		}
 	}
 	#contact {
@@ -177,6 +177,7 @@
 		}
         .contacts-left {
             width: 100%;
+			margin-left: -35px;
         }
         .my-contacts{
             padding-top: 0px;
