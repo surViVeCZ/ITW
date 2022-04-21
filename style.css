@@ -3,7 +3,7 @@
   padding-bottom: 60px;
   background-color: black;
   color: white;
-  font-family: 'Lobster', cursive;
+  font-family: 'Comfortaa', cursive;
   text-align: center;
 }
 
@@ -109,7 +109,7 @@
 
 .title {
   color: orange;
-  font-family: 'Lobster', cursive;
+  font-family: 'Comfortaa', cursive;
   font-size: 30px;
 }
 
@@ -184,7 +184,7 @@
 
 #services h3 {
   color: #FFA200;
-  font-family: 'Lobster', cursive;
+  font-family: 'Comfortaa', cursive;
 }
 
 #services .content > div {
@@ -233,11 +233,11 @@
 
 #services .services-card p {
   color: #929292;
-  font-family: 'Lobster', cursive;
+  font-family: 'Comfortaa', cursive;
 }
 
 #services .first_par {
-  font-family: 'Lobster', cursive;
+  font-family: 'Comfortaa', cursive;
   color: black;
   text-align: left;
   margin-right: 100px;
@@ -309,7 +309,7 @@
 
 #achievements h3 {
   font-size: 38px;
-  font-family: 'Lobster', cursive;
+  font-family: 'Comfortaa', cursive;
 }
 
 #achievements .carousel {
@@ -407,7 +407,7 @@
 }
 
 #price p {
-  font-family: 'Lobster', cursive;
+  font-family: 'Comfortaa', cursive;
 }
 
 #price .button {
@@ -434,7 +434,7 @@
 }
 
 .my_service {
-  font-family: 'Lobster', cursive;
+  font-family: 'Comfortaa', cursive;
   width: 33.33%;
   height: 100%;
   padding: 0px;
@@ -449,7 +449,7 @@
   background-color: #4d4d4d;
   color: white;
   font-size: 22px;
-  font-family: 'Lobster', cursive;
+  font-family: 'Comfortaa', cursive;
 }
 
 .my_service li {
@@ -490,7 +490,7 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  font-family: 'Lobster', cursive;
+  font-family: 'Comfortaa', cursive;
 }
 
 .my-contacts {
@@ -716,7 +716,7 @@ h3 {
 
 h2 {
   font-size: 44px;
-  font-family: 'Lobster', cursive;
+  font-family: 'Comfortaa', cursive;
 }
 
 .content {
@@ -758,7 +758,7 @@ body {
 }
 
 #header-title h1 {
-  padding-top: 110px;
+  padding-top: 220px;
   font-size: 100px;
   color: white;
   font-family: 'Satisfy', cursive;
@@ -894,6 +894,7 @@ body {
   #header-title h2 {
     font-size: 35px;
     margin: 0px;
+    padding-bottom: 50px;
   }
   #contacts .fa {
     display: none;
