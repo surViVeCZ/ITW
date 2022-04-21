@@ -209,6 +209,9 @@
   .my-contacts .contactForm {
     width: 100%;
   }
+  .my-contacts .text {
+    margin-left: 15px;
+  }
   #contact .contacts-content {
     background-color: black;
   }
@@ -220,7 +223,7 @@
     padding-top: 0px;
   }
   #contact .contact-member {
-    padding: 20px 25px;
+    padding: 10px 25px;
   }
 }
 /*# sourceMappingURL=contact.css.map */
