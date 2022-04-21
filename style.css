@@ -477,6 +477,8 @@
   }
   #price .my_service {
     width: 100%;
+    margin: 0px;
+    margin-bottom: 10px;
   }
 }
 
