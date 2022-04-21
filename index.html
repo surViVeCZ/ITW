@@ -1,11 +1,11 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="cs">
 <head>
     <meta charset="utf-8">
     <link rel="icon" type="image/x-icon" href="favicon.ico"/> 
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Satisfy&display=swap" rel="stylesheet">
@@ -23,30 +23,35 @@
 <body style="background-color:white; margin:0px">
 			
     <header id="header">
-       <div id="contacts">
-            <a href="https://www.facebook.com/profile.php?id=100009327275009" class="fa fa-facebook-f"></a>
-            <a href="https://www.instagram.com/jancatrefilkova/" class="fa fa-instagram"></a>
-            <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" class="fa fa-youtube-play"></a>
-            <a href="https://mobile.twitter.com/jana_trefilkova" class="fa fa-twitter"></a>
-        </div>
-        <div id="header-menu">
-            <nav class="navigation">
-                <a class="logoa" href="#header">
-                    <div class="logo">
-                        <img src="img/meal.png" alt=".">
-                        <p>JT</p>
-                    </div>
-                </a>
-                <div>
-                <ul id="navs">
-                    <li class="expand about"><a href="#about">O&nbsp;mně</a></li>
-                    <li class="expand services"><a href="#services">Služby</a></li>
-                    <li class="expand achievements"><a href="index.html#achievements">Úspěchy</a></li>
-                    <li class="expand price"><a href="index.html#price">Ceník</a></li>
-                    <li class="expand contact"><a href="index.html#contact">Kontakt</a></li>
-                </ul>
-            </nav>
-        </div>
+      <div id="contacts">
+          <a href="https://www.facebook.com/profile.php?id=100009327275009" class="fa fa-facebook-f"></a>
+          <a href="https://www.instagram.com/jancatrefilkova/" class="fa fa-instagram"></a>
+          <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" class="fa fa-youtube-play"></a>
+          <a href="https://mobile.twitter.com/jana_trefilkova" class="fa fa-twitter"></a>
+      </div>
+      <div id="header-menu">
+        <nav class="navigation">
+            <a class="logoa" href="#header">
+                <div class="logo">
+                    <img src="img/meal.png" alt=".">
+                    <p>JT</p>
+                </div>
+            </a>
+            <input id="menu-toggle" type="checkbox" />
+            <div id="hamburger">
+              <label class='menu-button-container' for="menu-toggle">
+                <div class='menu-button'></div>
+              </label>
+            </div>
+            <ul id="navs">
+              <li class="expand about"><a href="#about">O&nbsp;mně</a></li>
+              <li class="expand services"><a href="#services">Služby</a></li>
+              <li class="expand achievements"><a href="index.html#achievements">Úspěchy</a></li>
+              <li class="expand price"><a href="index.html#price">Ceník</a></li>
+              <li class="expand contact"><a href="index.html#contact">Kontakt</a></li>
+            </ul>
+          </nav>
+      </div>
         <div class="content">
             <div class="title" id="header-title">
                 <div>
@@ -87,10 +92,10 @@
                             </div>
                         </div>
                     </div>
-
-                    <p>Ahoj, jsem nutriční terapeutka Jana Trefilková. Vystudovala jsem magisterské studium nutriční specialista na Lékařské fakultě Masarykovy univerzity a zároveň bakalářské studium Fitness coach na Fakultě Sportovních studií Masarykovy univerzity v Brně. Absolvovala jsem roční stáž v newyorské nemocnici, kde jsme se sestavovala jídelníčky pro lidi s nejrůznějšími nemocemi a půl roční stáž v Sydney, kde jsem měla svou ambulanci a zároveň jsem se zde účastnila závodu v bikini fitnes, kde jsem skončila na 6.miste. Nyní se věnuji především sestavování redukčních jídelníčku, dále pak sestavují tréninkové plány na míru a v neposlední řadě navštěvuji základní a střední školy a edukuji studenty zábavnou cestou v oblasti výživy</p>
-
-                     <p>Nullam feugiat, turpis at pulvinar vulputate, erat libero tristique tellus, nec bibendum odio risus sit amet ante.  Vel sagittis velit mauris vel metus. Curabitur vitae diam non enim vestibulum interdum. Duis bibendum, lectus ut viverra rhoncus, dolor nunc faucibus libero, eget facilisis enim ipsum id lacus. Fusce tellus odio, dapibus id fermentum quis, suscipit id erat. Nam quis nulla. Phasellus enim erat, vestibulum vel, aliquam a, posuere eu, velit. Aliquam id dolor. Et harum quidem rerum facilis est et expedita distinctio.</p>
+                    <div>
+                      <p>Ahoj, jsem nutriční terapeutka Jana Trefilková. Vystudovala jsem magisterské studium nutriční specialista na Lékařské fakultě Masarykovy univerzity a zároveň bakalářské studium Fitness coach na Fakultě Sportovních studií Masarykovy univerzity v Brně. Absolvovala jsem roční stáž v newyorské nemocnici, kde jsme se sestavovala jídelníčky pro lidi s nejrůznějšími nemocemi a půl roční stáž v Sydney, kde jsem měla svou ambulanci a zároveň jsem se zde účastnila závodu v bikini fitnes, kde jsem skončila na 6.miste. Nyní se věnuji především sestavování redukčních jídelníčku, dále pak sestavují tréninkové plány na míru a v neposlední řadě navštěvuji základní a střední školy a edukuji studenty zábavnou cestou v oblasti výživy</p>
+                      <p>Nullam feugiat, turpis at pulvinar vulputate, erat libero tristique tellus, nec bibendum odio risus sit amet ante.  Vel sagittis velit mauris vel metus. Curabitur vitae diam non enim vestibulum interdum. Duis bibendum, lectus ut viverra rhoncus, dolor nunc faucibus libero, eget facilisis enim ipsum id lacus. Fusce tellus odio, dapibus id fermentum quis, suscipit id erat. Nam quis nulla. Phasellus enim erat, vestibulum vel, aliquam a, posuere eu, velit. Aliquam id dolor. Et harum quidem rerum facilis est et expedita distinctio.</p>
+                  </div>
                   </div>
                 <div class="timeline">
                     <div class="outer">
@@ -252,7 +257,7 @@
        </div>
        <div class="inputBox">
           <textarea required="required"></textarea>
-          <p class="aaa">Vaše zpráva</p>
+          <p class="your_mes">Vaše zpráva</p>
        </div>
        <div class="inputBox">
           <input type="submit" name="" value="Send">

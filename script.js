@@ -18,7 +18,7 @@ function reveal() {
 
   //visible navbar
   window.addEventListener("scroll", function(){
-      var header = document.querySelector("nav");
+      var header = document.querySelector("#header-menu");
       header.classList.toggle("sticky", window.scrollY > 600);
 
   })

@@ -1,0 +1,86 @@
+#price {
+  padding-top: 60px;
+  padding-bottom: 60px;
+  background-color: white;
+  color: black;
+  text-align: center;
+}
+
+#price h2 {
+  text-align: center;
+}
+
+#price p {
+  font-family: 'Lobster', cursive;
+}
+
+#price .button {
+  background-color: orange;
+  border-radius: 5px;
+  color: white;
+  padding: 10px 25px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 18px;
+}
+
+#price .button:hover {
+  background-color: #04AA6D;
+}
+
+.pricelist {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.my_service {
+  font-family: 'Lobster', cursive;
+  width: 33.33%;
+  height: 100%;
+  padding: 0px;
+  list-style-type: none;
+  border: 1px solid #eee;
+  margin: 10px;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.my_service .header {
+  background-color: #4d4d4d;
+  color: white;
+  font-size: 22px;
+  font-family: 'Lobster', cursive;
+}
+
+.my_service li {
+  border-bottom: 1px solid #eee;
+  padding: 20px;
+  text-align: center;
+}
+
+.my_service .price {
+  background-color: #A09E9C;
+  font-size: 25px;
+  letter-spacing: .2rem;
+  color: orange;
+}
+
+@media (max-width: 700px) {
+  #price .pricelist {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  #price .my_service {
+    width: 100%;
+  }
+}
+/*# sourceMappingURL=price.css.map */

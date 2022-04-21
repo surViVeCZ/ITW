@@ -1,0 +1,116 @@
+#services {
+	text-align: center;
+	padding-top: 60px;
+	padding-bottom: 60px;
+	background-image: url("img/backround3.jpg");
+	background-size: cover;
+	background-repeat: no-repeat;
+	h3 {
+		color: #FFA200; font-family: 'Lobster', cursive;
+	}
+	.content {
+		>div {
+			// margin: auto;
+			// width: -webkit-max-content;
+			// width: -moz-max-content;
+			// width: max-content;
+			// height: -webkit-max-content;
+			// height: -moz-max-content;
+			// height: max-content;
+			display: -ms-grid;
+			display: grid;
+			//-ms-grid-columns: 1200px;
+			//grid-template-columns: 1200px; 
+			gap: 40px;
+			padding-bottom: 120px;
+		}
+	}
+	.services-card {
+		backdrop-filter: grayscale(0.9) opacity(0.9) blur(6px);
+		padding: 40px;
+		position: relative;
+		&:hover {
+			div {
+				img {
+					&:last-child {
+						display: initial;
+						transform: scale(1.3);
+					}
+				}
+			}
+			-webkit-box-shadow: 0 0 25px 0 orange;
+			box-shadow: 0 0 25px 0 orange;
+			h3 {
+				color: #AD730E;
+			}
+			p {
+				color: #AD730E;
+			}
+		}
+		>div {
+			display: -webkit-box;
+			display: -ms-flexbox;
+			display: flex;
+			-webkit-box-pack: center;
+			-ms-flex-pack: center;
+			justify-content: center;
+			margin-bottom: 20px;
+			height: 40px;
+		}
+		p {
+			color: #929292;
+			font-family: 'Lobster', cursive;
+		}
+	}
+	.first_par {
+		font-family: 'Lobster', cursive;
+		color: black;
+		text-align: left;
+		margin-right: 100px;
+		padding-bottom: 20px;
+	}
+	img {
+		margin: 5px;
+		height: 50px;
+		width: 50px;
+	}
+}
+.services-card {
+	>div {
+		padding-bottom: 10px;
+	}
+	-webkit-box-shadow: 0 0 20px 0 grey;
+	box-shadow: 0 0 20px 0 grey;
+	padding: 10px;
+	border-radius: 40px;
+}
+.reveal {
+	position: relative;
+	-webkit-transform: translateY(150px);
+	transform: translateY(150px);
+	transition: 1s all ease;
+	opacity: 0;
+}
+.reveal.active {
+	-webkit-transform: translateY(0);
+	transform: translateY(0);
+	opacity: 1;
+}
+
+@media (max-width: 700px) {
+	#services{
+		background-image: none;
+		background-color: white;
+		color: black;
+
+		.first_par{
+			margin: auto;
+			text-align: center;
+		}
+
+		.services-card {
+			-webkit-box-shadow: 0 0 5px 0 orange;
+			box-shadow: 0 0 5px 0 orange;
+		}
+	}
+}
