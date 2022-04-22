@@ -3,6 +3,7 @@
   padding-bottom: 60px;
   background-color: black;
   color: white;
+  min-width: 400px;
   font-family: 'Comfortaa', cursive;
   text-align: center;
 }
@@ -176,6 +177,7 @@
 #services {
   text-align: center;
   padding-top: 60px;
+  min-width: 400px;
   padding-bottom: 60px;
   background-image: url("img/backround3.jpg");
   background-size: cover;
@@ -293,6 +295,7 @@
 }
 
 #achievements {
+  min-width: 400px;
   padding-top: 60px;
   padding-bottom: 60px;
   background-color: orange;
@@ -427,6 +430,7 @@
 #price {
   padding-top: 60px;
   padding-bottom: 60px;
+  min-width: 400px;
   background-color: white;
   color: black;
   text-align: center;
@@ -513,6 +517,7 @@
 }
 
 #contact {
+  min-width: 400px;
   padding-bottom: 100px;
   padding-top: 60px;
   background-color: black;
