@@ -909,9 +909,12 @@ body {
   }
   #menu-toggle:checked ~ #navs {
     height: auto;
-    margin-top: 55px;
+    margin-top: 40px;
     background-color: #222;
     width: 100%;
+  }
+  #menu-toggle:checked ~ #contacts {
+    background-color: red;
   }
   #navs a.active {
     border: none;
@@ -933,7 +936,7 @@ body {
   #header-title h1 {
     font-size: 45px;
     text-align: center;
-    padding-top: 100px;
+    padding-top: 200px;
   }
   #header-title h2 {
     font-size: 35px;
@@ -1076,6 +1079,10 @@ body {
   position: fixed;
   top: 0;
   z-index: 550;
+}
+
+.sticky #contacts {
+  display: none;
 }
 
 .sticky a {
@@ -1323,6 +1330,11 @@ path.two {
   #header-menu a {
     color: white;
   }
+  .sticky #contacts {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
   .expand:after {
     border-bottom: solid 3px black;
     border: none;
@@ -1392,7 +1404,7 @@ path.two {
     display: -ms-flexbox;
     display: flex;
     background-color: #222;
-    margin: 55px 0;
+    margin: 0px;
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
@@ -1411,8 +1423,8 @@ path.two {
     margin-left: auto;
     margin-right: auto;
     text-align: center;
-    font-size: 35px;
-    margin-top: 25px;
+    font-size: 25px;
+    margin-top: 10px;
     margin-bottom: 10px;
   }
 }
