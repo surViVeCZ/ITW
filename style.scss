@@ -148,6 +148,7 @@ body {
 
 	#menu-toggle:checked ~ #navs {
 		height: auto;
+		margin-top: 55px;
 		background-color: #222;
 		width: 100%;
 	}
@@ -583,9 +584,11 @@ transform: rotate(-405deg);
 	#contacts{
 		position: static;
 		display: flex;
-		margin: 50px 0;
+		background-color: #222;
+		margin: 55px 0;
 		flex-direction: row;
 		margin-bottom: 0px;
+		padding-right: 0px;
 	}
 	#contacts .fa{
 		display: flex;
@@ -594,6 +597,8 @@ transform: rotate(-405deg);
     	margin-right: auto;
 		text-align: center;
 		font-size: 35px;
+		margin-top: 25px;
+		margin-bottom: 10px;
 	}
 }
 
