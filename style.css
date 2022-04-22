@@ -706,7 +706,7 @@
   color: orange;
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 700px) {
   .columns {
     width: 100%;
   }
@@ -773,6 +773,7 @@ body {
   background-size: cover;
   background-repeat: no-repeat;
   height: 100vh;
+  min-width: 400px;
   min-height: 400px;
   background-position: center center;
   background-image: url("img/backround2.jpg");
