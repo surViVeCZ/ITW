@@ -297,7 +297,7 @@ body {
 	background-color: #4d4d4d;
 	position: fixed;
 	top: 0;
-	z-index: 500;
+	z-index: 550;
 	a {
 		color: white;
 	}
@@ -371,7 +371,7 @@ body {
 		}
 	}
 }
-span {
+.wrapper span {
 	-webkit-transform: skewX(15deg);
 	transform: skewX(15deg);
 	&:nth-child(2) {

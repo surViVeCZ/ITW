@@ -45,7 +45,7 @@
 			flex-direction: column;
 			text-align: center;
 		}
-		.card{
+		.year{
 			width: auto;
     		height: min-content;
 		}
@@ -58,8 +58,7 @@
 		border-radius: 100%;
 	}
 }
-.timeline {
-	float: left;
+.vertical-line {
 	margin: 20px auto;
 	padding: 20px;
 	h3 {
@@ -72,23 +71,19 @@
 .outer {
 	border-left: 3px solid #ABABAB;
 }
-.card {
+.year {
 	position: relative;
-	margin: 0 0 20px 20px;
+	border-radius: 10px;
+	margin-bottom: 20px;
+	margin-left: 20px;
+	width: 300px;
 	padding: 10px;
 	background: #333;
 	color: white;
-	border-radius: 8px;
-	width: 300px;
 	max-height: 220px;
 }
 .info {
-	display: -webkit-box;
-	display: -ms-flexbox;
 	display: flex;
-	-webkit-box-orient: vertical;
-	-webkit-box-direction: normal;
-	-ms-flex-direction: column;
 	flex-direction: column;
 }
 .title {

@@ -6,6 +6,33 @@
   text-align: center;
 }
 
+#achievements nav {
+  background-color: orange;
+  text-align: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  justify-items: center;
+  position: -webkit-sticky;
+  position: sticky;
+  width: 100%;
+  margin: 0 auto auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: auto;
+  top: 6rem;
+  z-index: 300;
+}
+
+#achievements nav a {
+  padding-right: 50px;
+  padding-left: 50px;
+  color: white;
+  font-size: 28px;
+  font-family: 'Comfortaa', cursive;
+}
+
 #achievements img {
   margin: auto;
   width: 60%;
@@ -97,6 +124,9 @@
   #achievements img {
     width: 90%;
     padding: 10px;
+  }
+  #achievements nav {
+    top: 4rem;
   }
 }
 /*# sourceMappingURL=achievements.css.map */

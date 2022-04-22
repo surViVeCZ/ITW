@@ -56,7 +56,7 @@
             flex-direction: column;
     text-align: center;
   }
-  #about .card {
+  #about .year {
     width: auto;
     height: -webkit-min-content;
     height: -moz-min-content;
@@ -68,17 +68,16 @@
   border-radius: 100%;
 }
 
-.timeline {
-  float: left;
+.vertical-line {
   margin: 20px auto;
   padding: 20px;
 }
 
-.timeline h3 {
+.vertical-line h3 {
   margin: 0px;
 }
 
-.timeline p {
+.vertical-line p {
   padding: 2px;
 }
 
@@ -86,14 +85,15 @@
   border-left: 3px solid #ABABAB;
 }
 
-.card {
+.year {
   position: relative;
-  margin: 0 0 20px 20px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  margin-left: 20px;
+  width: 300px;
   padding: 10px;
   background: #333;
   color: white;
-  border-radius: 8px;
-  width: 300px;
   max-height: 220px;
 }
 
@@ -103,8 +103,8 @@
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-  -ms-flex-direction: column;
-  flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
 .title {

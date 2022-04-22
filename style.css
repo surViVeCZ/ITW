@@ -56,7 +56,7 @@
             flex-direction: column;
     text-align: center;
   }
-  #about .card {
+  #about .year {
     width: auto;
     height: -webkit-min-content;
     height: -moz-min-content;
@@ -68,17 +68,16 @@
   border-radius: 100%;
 }
 
-.timeline {
-  float: left;
+.vertical-line {
   margin: 20px auto;
   padding: 20px;
 }
 
-.timeline h3 {
+.vertical-line h3 {
   margin: 0px;
 }
 
-.timeline p {
+.vertical-line p {
   padding: 2px;
 }
 
@@ -86,14 +85,15 @@
   border-left: 3px solid #ABABAB;
 }
 
-.card {
+.year {
   position: relative;
-  margin: 0 0 20px 20px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  margin-left: 20px;
+  width: 300px;
   padding: 10px;
   background: #333;
   color: white;
-  border-radius: 8px;
-  width: 300px;
   max-height: 220px;
 }
 
@@ -103,8 +103,8 @@
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-  -ms-flex-direction: column;
-  flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
 .title {
@@ -300,6 +300,33 @@
   text-align: center;
 }
 
+#achievements nav {
+  background-color: orange;
+  text-align: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  justify-items: center;
+  position: -webkit-sticky;
+  position: sticky;
+  width: 100%;
+  margin: 0 auto auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: auto;
+  top: 6rem;
+  z-index: 300;
+}
+
+#achievements nav a {
+  padding-right: 50px;
+  padding-left: 50px;
+  color: white;
+  font-size: 28px;
+  font-family: 'Comfortaa', cursive;
+}
+
 #achievements img {
   margin: auto;
   width: 60%;
@@ -391,6 +418,9 @@
   #achievements img {
     width: 90%;
     padding: 10px;
+  }
+  #achievements nav {
+    top: 4rem;
   }
 }
 
@@ -613,7 +643,9 @@
 }
 
 .contactForm .inputBox textarea {
-  width: 100%;
+  min-height: 40px;
+  max-width: 100%;
+  min-width: 100%;
   padding: 5px 0;
   font-size: 16px;
   margin: 10px 0;
@@ -1041,7 +1073,7 @@ body {
   background-color: #4d4d4d;
   position: fixed;
   top: 0;
-  z-index: 500;
+  z-index: 550;
 }
 
 .sticky a {
@@ -1122,12 +1154,12 @@ body {
   margin-right: 0px;
 }
 
-span {
+.wrapper span {
   -webkit-transform: skewX(15deg);
   transform: skewX(15deg);
 }
 
-span:nth-child(2) {
+.wrapper span:nth-child(2) {
   width: 20px;
   margin-left: 30px;
   position: relative;
