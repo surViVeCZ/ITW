@@ -932,7 +932,7 @@ body {
   #header-title h1 {
     font-size: 45px;
     text-align: center;
-    padding-top: 220px;
+    padding-top: 100px;
   }
   #header-title h2 {
     font-size: 35px;
@@ -1386,13 +1386,16 @@ path.two {
     border-bottom: 1px solid #444;
   }
   #contacts {
+    position: static;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    margin: 50px 0;
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
             flex-direction: row;
+    margin-bottom: 0px;
   }
   #contacts .fa {
     display: -webkit-box;
@@ -1402,7 +1405,8 @@ path.two {
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
             flex-direction: row;
-    margin-right: 30px;
+    margin-left: auto;
+    margin-right: auto;
     text-align: center;
     font-size: 35px;
   }
