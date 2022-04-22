@@ -3,7 +3,7 @@
   padding-bottom: 60px;
   background-color: black;
   color: white;
-  min-width: 390px;
+  min-width: 400px;
   font-family: 'Comfortaa', cursive;
   text-align: center;
 }
@@ -91,7 +91,7 @@
   border-radius: 10px;
   margin-bottom: 20px;
   margin-left: 20px;
-  width: 300px;
+  width: 400px;
   padding: 10px;
   background: #333;
   color: white;
@@ -177,7 +177,7 @@
 #services {
   text-align: center;
   padding-top: 60px;
-  min-width: 390px;
+  min-width: 400px;
   padding-bottom: 60px;
   background-image: url("img/backround3.jpg");
   background-size: cover;
@@ -295,7 +295,7 @@
 }
 
 #achievements {
-  min-width: 390px;
+  min-width: 400px;
   padding-top: 60px;
   padding-bottom: 60px;
   background-color: orange;
@@ -430,7 +430,7 @@
 #price {
   padding-top: 60px;
   padding-bottom: 60px;
-  min-width: 390px;
+  min-width: 400px;
   background-color: white;
   color: black;
   text-align: center;
@@ -517,7 +517,7 @@
 }
 
 #contact {
-  min-width: 390px;
+  min-width: 400px;
   padding-bottom: 100px;
   padding-top: 60px;
   background-color: black;
@@ -778,8 +778,7 @@ body {
   background-size: cover;
   background-repeat: no-repeat;
   height: 100vh;
-  min-width: 390px;
-  min-height: 390px;
+  min-height: 400px;
   background-position: center center;
   background-image: url("img/backround2.jpg");
 }
