@@ -32,6 +32,9 @@
 }
 
 @media (max-width: 700px) {
+  #about .card2 {
+    margin-bottom: 20px;
+  }
   #about .about-item {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -55,6 +58,7 @@
         -ms-flex-direction: column;
             flex-direction: column;
     text-align: center;
+    padding-right: 20px;
   }
   #about .year {
     width: auto;
@@ -125,7 +129,7 @@
   border: 3px solid orange;
 }
 
-.flip-container {
+.twosides {
   -webkit-perspective: 800;
           perspective: 800;
   margin: 50px;
@@ -133,7 +137,7 @@
   float: left;
 }
 
-.flip-container:hover .card2 {
+.twosides:hover .card2 {
   -webkit-transform: rotateY(180deg);
   transform: rotateY(180deg);
 }
@@ -1344,7 +1348,7 @@ path.two {
     border-bottom: solid 3px black;
     border: none;
   }
-  .text-about .flip-container {
+  .text-about .twosides {
     margin: auto;
   }
   #hamburger {

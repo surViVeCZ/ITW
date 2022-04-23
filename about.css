@@ -32,6 +32,9 @@
 }
 
 @media (max-width: 700px) {
+  #about .card2 {
+    margin-bottom: 20px;
+  }
   #about .about-item {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -55,6 +58,7 @@
         -ms-flex-direction: column;
             flex-direction: column;
     text-align: center;
+    padding-left: 10px;
   }
   #about .year {
     width: auto;
@@ -125,20 +129,21 @@
   border: 3px solid orange;
 }
 
-.flip-container {
+.twosides {
+  float: left;
+  margin: 50px;
   -webkit-perspective: 800;
           perspective: 800;
-  margin: 50px;
   margin-top: 10px;
-  float: left;
 }
 
-.flip-container:hover .card2 {
+.twosides:hover .card2 {
   -webkit-transform: rotateY(180deg);
   transform: rotateY(180deg);
 }
 
 .card2 {
+  position: relative;
   width: 280px;
   height: 280px;
   background-color: transparent;
@@ -146,29 +151,28 @@
   transition: 0.5s;
   -webkit-transform-style: preserve-3d;
   transform-style: preserve-3d;
-  position: relative;
 }
 
 .front {
+  z-index: 1;
+  background-color: transparent;
+  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
   width: 280px;
   height: 280px;
-  background-color: transparent;
-  -webkit-backface-visibility: hidden;
-  backface-visibility: hidden;
   position: absolute;
-  z-index: 1;
   -webkit-transform: rotateY(180deg);
   transform: rotateY(180deg);
 }
 
 .back {
+  z-index: 2;
+  background-color: transparent;
+  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
   width: 280px;
   height: 280px;
-  background-color: transparent;
-  -webkit-backface-visibility: hidden;
-  backface-visibility: hidden;
   position: absolute;
-  z-index: 2;
   -webkit-transform: rotateY(0deg);
   transform: rotateY(0deg);
 }
