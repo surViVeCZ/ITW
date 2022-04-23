@@ -1,3 +1,8 @@
+//project: ITW2
+//author: xpoucp01
+//date: 23.04.2022
+//section: SERVICES
+
 #services {
 	text-align: center;
 	padding-top: 60px;
@@ -12,17 +17,8 @@
 
 	.content {
 		>div {
-			// margin: auto;
-			// width: -webkit-max-content;
-			// width: -moz-max-content;
-			// width: max-content;
-			// height: -webkit-max-content;
-			// height: -moz-max-content;
-			// height: max-content;
 			display: -ms-grid;
 			display: grid;
-			//-ms-grid-columns: 1200px;
-			//grid-template-columns: 1200px; 
 			gap: 40px;
 			padding-bottom: 120px;
 		}
@@ -98,7 +94,7 @@
 	transform: translateY(0);
 	opacity: 1;
 }
-
+//mobile view
 @media (max-width: 700px) {
 	#services{
 		background-image: none;

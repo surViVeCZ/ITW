@@ -1,3 +1,7 @@
+//project: ITW2
+//author: xpoucp01
+//date: 23.04.2022
+//section: PRICE
 #price {
 	padding-top: 60px;
 	padding-bottom: 60px;
@@ -9,6 +13,7 @@
 	p {
 		font-family: 'Comfortaa', cursive;
 	}
+	//button to order service, green hover
 	.button {
 		background-color: orange;
 		border-radius: 5px;
@@ -22,10 +27,12 @@
 		}
 	}
 }
+//display flex, all programs are on same level
 .pricelist {
 	display: flex;
 	justify-content: space-between;
 }
+//1 program
 .my_service {
 	font-family: 'Comfortaa', cursive;
 	width: 33.33%;
@@ -34,8 +41,6 @@
 	list-style-type: none;
 	border: 1px solid #eee;
 	margin: 10px;
-	-webkit-transition: 0.3s;
-	transition: 0.3s;
 	.header {
 		background-color: #4d4d4d;
 		color: white;
@@ -54,7 +59,7 @@
 		color: orange;
 	}
 }
-
+//mobile view
 @media (max-width: 700px) {
 	#price{
 		.pricelist{

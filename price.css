@@ -45,8 +45,6 @@
   list-style-type: none;
   border: 1px solid #eee;
   margin: 10px;
-  -webkit-transition: 0.3s;
-  transition: 0.3s;
 }
 
 .my_service .header {

@@ -6,10 +6,15 @@
 @import "price";
 @import "contact";
 
+//project: ITW2
+//author: xpoucp01
+//date: 23.04.2022
+//section: HEADER
+
 html, body {
     max-width: 100%;
 }
-
+//smooth scrolling when using nav
 html {
 	scroll-behavior: smooth; 
 }
@@ -30,7 +35,7 @@ body {
 	font-family: "Arial";
 	line-height: 1.7;
 }
-
+//min width of each section is set to 405px
 #header {
 	text-align: center;
 	background-size: cover;
@@ -59,27 +64,26 @@ body {
 		background-image: -webkit-linear-gradient(100deg, white, orange);
 		background-size: 100%;
 		background-repeat: repeat;
+		//for gradient text color
 		-webkit-background-clip: text;
 		-webkit-text-fill-color: transparent;
 		-moz-background-clip: text;
 		-moz-text-fill-color: transparent;
 		font-family: 'Satisfy', cursive;
 	}
-	-webkit-box-orient: vertical;
-	-webkit-box-direction: normal;
-	-ms-flex-direction: column;
 	flex-direction: column;
 	display: -webkit-box;
 	display: -ms-flexbox;
 	display: flex;
-	-webkit-box-pack: center;
-	-ms-flex-pack: center;
 	justify-content: center;
 }
 
 #a.navigation {
 	color: white;
 }
+
+//nav logo
+//click logo text rotation
 .logo {
 	align-items: center;
 	position: relative;
@@ -113,7 +117,6 @@ body {
 	width: 100%;
 }
 #navs {
-
 	display: flex;
 	flex-direction: row;
 	list-style-type: none;
@@ -129,7 +132,7 @@ body {
 		}
 	}
 }
-
+//mobile view
 @media (max-width: 700px) {
 
 	html, body {
@@ -161,24 +164,18 @@ body {
 		background-color: #222;
 		width: 100%;
 	}
-
-	#menu-toggle:checked ~ #contacts{
-		background-color: red;
+	#navs li {
+		background-color: transparent;
+		border: none;
 	}
-
-
 
 	#navs a.active {
-		border: none;
 		background-color: transparent;
+		border: none;
 	}
 	#navs li.active {
-		border: none;
 		background-color: transparent;
-	}
-	#navs li {
 		border: none;
-		background-color: transparent;
 	}
 	#header-title {
 		height: max-content;
@@ -198,6 +195,7 @@ body {
 
 .navigation {
 	position: relative;
+	//logo with text
 	.logoa {
 		padding: 0px;
 		margin: 0px;
@@ -222,9 +220,11 @@ body {
 		color: white;
 		width: 50px;
 		height: 50px;
+		//from black color to white
 		-webkit-filter: invert(100%);
 		filter: invert(100%);
 	}
+	//JT text next to logo
 	a {
 		font-family: 'Fira Sans', sans-serif;
 		font-weight: bold;
@@ -235,6 +235,7 @@ body {
 		text-decoration: none;
 		font-size: 17px;
 	}
+	//navigation items
 	ul {
 		position: relative;
 		display: -webkit-box;
@@ -279,26 +280,24 @@ body {
 		font-size: 18pt;
 	}
 }
+
+//hover on nav member creates underline
 .expand {
-	width: -moz-min-content;
-	width: min-content;
-	padding: 10px;
+	border-radius: 20px;
 	position: relative;
 	text-decoration: none;
+	width: min-content;
+	padding: 15px;
 	display: inline-block;
-	border-radius: 20px;
 	&:after {
+		border-bottom: solid 3px orange;
 		display: block;
 		content: '';
-		border-bottom: solid 3px orange;
 		padding: 5px;
-		-webkit-transform: scaleX(0);
+		transition: -webkit-transform 650ms ease-in-out;
+		transition: transform 650ms ease-in-out;
+		transition: transform 650ms ease-in-out, -webkit-transform 650ms ease-in-out;
 		transform: scaleX(0);
-		-webkit-transition: -webkit-transform 700ms ease-in-out;
-		transition: -webkit-transform 700ms ease-in-out;
-		transition: transform 700ms ease-in-out;
-		transition: transform 700ms ease-in-out, -webkit-transform 700ms ease-in-out;
-		-webkit-transform-origin: 100% 50%;
 		transform-origin: 100% 50%;
 	}
 	&:hover {
@@ -310,7 +309,6 @@ body {
 		}
 	}
 }
-
 .sticky {
 	#contacts{
 		display: none;
@@ -323,6 +321,7 @@ body {
 		color: white;
 	}
 }
+
 
 * {
 	-webkit-box-sizing: border-box;
@@ -353,7 +352,7 @@ body {
 	text-decoration: none;
 	color: white;
 }
-
+//ig, fb, twitter - fa icons
 #contacts {
 	align-items: center;
 	display: -webkit-box;
@@ -410,6 +409,7 @@ body {
   
   .fa-instagram:hover {
 	background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+	//gradient background 
 	-webkit-background-clip: text;
 	background-clip: text;
 	-webkit-text-fill-color: transparent;
@@ -431,51 +431,52 @@ body {
 #menu-toggle {
 	display: none;
 }
-
+//burger menu for mobile view
 #hamburger {
 	display: none;
 	width: 30px;
 	height: 30px;
 }
-
-.menu-button,
-.menu-button::before,
-.menu-button::after {
-	display: block;
-	background-color: #fff;
+//hamburger menu - 3 lines
+.lines-button,
+.lines-button::before,
+.lines-button::after {
 	position: absolute;
-	height: 4px;
+	display: block;
+	background-color: white;
+	height: 3px;
 	width: 30px;
 	margin-top: 15px;
 	transition: transform 400ms cubic-bezier(0.23, 1, 0.32, 1);
 	border-radius: 2px;
 }
 
-.menu-button::before {
+.lines-button::before {
 	content: '';
 	margin-top: -8px;
 }
 
 
-.menu-button::after {
+.lines-button::after {
 	content: '';
 	margin-top: 8px;
 }
-
-#menu-toggle:checked + #hamburger .menu-button::before {
+//rotation creates animation when checked
+#menu-toggle:checked + #hamburger .lines-button::before {
 	margin-top: 0px;
+	//45 for the cross, + 360 for the full rotation
 	transform: rotate(405deg);
 }
   
-#menu-toggle:checked + #hamburger .menu-button {
+#menu-toggle:checked + #hamburger .lines-button {
 background: rgba(255, 255, 255, 0);
 }
 
-#menu-toggle:checked + #hamburger .menu-button::after {
+#menu-toggle:checked + #hamburger .lines-button::after {
 margin-top: 0px;
 transform: rotate(-405deg);
 }
-
+//mobile view
 @media (max-width: 700px) {
 	#header-menu{
 		background-color: #4d4d4d;
@@ -486,6 +487,7 @@ transform: rotate(-405deg);
 			color: white;
 		}
 	}
+	//sticky contacts in mobile view
 	.sticky {
 		#contacts{
 			display: flex;
@@ -499,6 +501,7 @@ transform: rotate(-405deg);
 		border-bottom: solid 3px black;
 		border: none;
 	}
+
 	.text-about .twosides{
 		margin: auto;
 	}
@@ -507,7 +510,7 @@ transform: rotate(-405deg);
 		display: block;
 	}
 
-	.menu-button-container {
+	.mobile-menu-box {
 		display: flex;
 	}
 	.navs {
@@ -523,26 +526,23 @@ transform: rotate(-405deg);
 
 	#menu-toggle ~ .navs li {
 		height: 0;
+		transition: height 400ms cubic-bezier(0.23, 1, 0.32, 1);
+		border: 0;
 		margin: 0;
 		padding: 0;
-		border: 0;
-		transition: height 400ms cubic-bezier(0.23, 1, 0.32, 1);
 	}
 
 	#menu-toggle:checked ~ .navs li {
-		border: 1px solid #333;
-		height: 2.5em;
-		padding: 0.5em;
+		padding: 5px;
 		transition: height 400ms cubic-bezier(0.23, 1, 0.32, 1);
 	}
 	.navs > li {
 		display: flex;
 		justify-content: center;
 		margin: 0;
-		padding: 0.5em 0;
+		padding: 5px;
 		width: 100%;
 		color: white;
-		background-color: #222;
 	}
 	.navs > li:not(:last-child) {
 		border-bottom: 1px solid #444;

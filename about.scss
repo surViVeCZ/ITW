@@ -1,3 +1,7 @@
+//project: ITW2
+//author: xpoucp01
+//date: 23.04.2022
+//section: ABOUT
 #about {
 	padding-top: 60px;
 	padding-bottom: 60px;
@@ -19,6 +23,7 @@
 		padding-right: 20px;
 		text-align: right;
 	}
+	//about image 
 	img {
 		float: left;
 		width: 280px;
@@ -28,7 +33,7 @@
 		margin-bottom: 40px;
 	}
 }
-
+//mobile view
 @media (max-width: 700px) {
 	#about{
 		.card2{
@@ -107,6 +112,7 @@
 		border: 3px solid orange;
 	}
 }
+//circle img
 .twosides {
 	float: left;
 	margin: 50px;
@@ -130,6 +136,7 @@
 	transform-style: preserve-3d;
 
 }
+//front img
 .front {
 	z-index: 1;
 	background-color: transparent;
@@ -141,6 +148,7 @@
 	-webkit-transform: rotateY(180deg);
 	transform: rotateY(180deg);
 }
+//back img
 .back {
 	z-index: 2;
 	background-color: transparent;

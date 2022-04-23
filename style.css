@@ -321,6 +321,7 @@
   margin: auto;
   top: 6rem;
   z-index: 300;
+  top: 0;
 }
 
 #achievements nav a {
@@ -475,8 +476,6 @@
   list-style-type: none;
   border: 1px solid #eee;
   margin: 10px;
-  -webkit-transition: 0.3s;
-  transition: 0.3s;
 }
 
 .my_service .header {
@@ -595,7 +594,7 @@
           flex-direction: column;
 }
 
-.contact-member {
+.one-contact {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -603,7 +602,7 @@
   padding: 20px 0;
 }
 
-.contactForm {
+.contact-me {
   border-radius: 15px;
   width: 60%;
   padding: 40px;
@@ -611,18 +610,18 @@
   color: black;
 }
 
-.contactForm h2 {
+.contact-me h2 {
   font-size: 30px;
   color: orange;
 }
 
-.contactForm .inputBox {
+.contact-me .input-line {
   position: relative;
-  width: 100%;
   margin-top: 10px;
+  width: 100%;
 }
 
-.contactForm .inputBox input {
+.contact-me .input-line input {
   width: 100%;
   padding: 5px 0;
   font-size: 16px;
@@ -632,61 +631,61 @@
   outline: none;
 }
 
-.contactForm .inputBox input:focus ~ p {
+.contact-me .input-line input:valid ~ p {
   color: red;
   font-size: 14px;
   -webkit-transform: translateY(-20px);
           transform: translateY(-20px);
 }
 
-.contactForm .inputBox input:valid ~ p {
+.contact-me .input-line input:focus ~ p {
   color: red;
   font-size: 14px;
   -webkit-transform: translateY(-20px);
           transform: translateY(-20px);
 }
 
-.contactForm .inputBox textarea {
+.contact-me .input-line textarea {
+  border: none;
+  font-size: 16px;
   min-height: 40px;
   max-width: 100%;
   min-width: 100%;
   padding: 5px 0;
-  font-size: 16px;
   margin: 10px 0;
-  border: none;
   border-bottom: 2px solid black;
   outline: none;
 }
 
-.contactForm .inputBox textarea:focus ~ p {
+.contact-me .input-line textarea:valid ~ p {
   color: red;
   font-size: 14px;
   -webkit-transform: translateY(-20px);
           transform: translateY(-20px);
 }
 
-.contactForm .inputBox textarea:valid ~ p {
+.contact-me .input-line textarea:focus ~ p {
   color: red;
   font-size: 14px;
   -webkit-transform: translateY(-20px);
           transform: translateY(-20px);
 }
 
-.contactForm .inputBox input[type="submit"] {
+.contact-me .input-line input[type="submit"] {
+  font-size: 18px;
   width: 100px;
   background: orange;
   color: white;
   border: none;
   cursor: pointer;
   padding: 10px;
-  font-size: 18px;
 }
 
-.contactForm .inputBox input[type="submit"]:hover {
+.contact-me .input-line input[type="submit"]:hover {
   background: #04AA6D;
 }
 
-.inputBox p {
+.input-line p {
   position: absolute;
   left: 0;
   font-size: 16px;
@@ -698,7 +697,7 @@
   color: orange;
 }
 
-.inputBox p.your_mes {
+.input-line p.your_mes {
   position: absolute;
   left: 0;
   font-size: 16px;
@@ -726,7 +725,7 @@
         -ms-flex-direction: column;
             flex-direction: column;
   }
-  .my-contacts .contactForm {
+  .my-contacts .contact-me {
     width: 100%;
   }
   .my-contacts .text {
@@ -742,7 +741,7 @@
   #contact .my-contacts {
     padding-top: 0px;
   }
-  #contact .contact-member {
+  #contact .one-contact {
     padding: 10px 25px;
   }
 }
@@ -793,14 +792,14 @@ body {
 #header-title {
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-  -ms-flex-direction: column;
-  flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 #header-title h1 {
@@ -924,20 +923,17 @@ body {
     background-color: #222;
     width: 100%;
   }
-  #menu-toggle:checked ~ #contacts {
-    background-color: red;
+  #navs li {
+    background-color: transparent;
+    border: none;
   }
   #navs a.active {
-    border: none;
     background-color: transparent;
+    border: none;
   }
   #navs li.active {
-    border: none;
     background-color: transparent;
-  }
-  #navs li {
     border: none;
-    background-color: transparent;
   }
   #header-title {
     height: -webkit-max-content;
@@ -1053,29 +1049,29 @@ body {
 }
 
 .expand {
-  width: -moz-min-content;
-  width: -webkit-min-content;
-  width: min-content;
-  padding: 10px;
+  border-radius: 20px;
   position: relative;
   text-decoration: none;
+  width: -webkit-min-content;
+  width: -moz-min-content;
+  width: min-content;
+  padding: 15px;
   display: inline-block;
-  border-radius: 20px;
 }
 
 .expand:after {
+  border-bottom: solid 3px orange;
   display: block;
   content: '';
-  border-bottom: solid 3px orange;
   padding: 5px;
+  transition: -webkit-transform 650ms ease-in-out;
+  -webkit-transition: -webkit-transform 650ms ease-in-out;
+  transition: transform 650ms ease-in-out;
+  transition: transform 650ms ease-in-out, -webkit-transform 650ms ease-in-out;
   -webkit-transform: scaleX(0);
-  transform: scaleX(0);
-  -webkit-transition: -webkit-transform 700ms ease-in-out;
-  transition: -webkit-transform 700ms ease-in-out;
-  transition: transform 700ms ease-in-out;
-  transition: transform 700ms ease-in-out, -webkit-transform 700ms ease-in-out;
+          transform: scaleX(0);
   -webkit-transform-origin: 100% 50%;
-  transform-origin: 100% 50%;
+          transform-origin: 100% 50%;
 }
 
 .expand:hover:after {
@@ -1225,13 +1221,13 @@ body {
   height: 30px;
 }
 
-.menu-button,
-.menu-button::before,
-.menu-button::after {
-  display: block;
-  background-color: #fff;
+.lines-button,
+.lines-button::before,
+.lines-button::after {
   position: absolute;
-  height: 4px;
+  display: block;
+  background-color: white;
+  height: 3px;
   width: 30px;
   margin-top: 15px;
   -webkit-transition: -webkit-transform 400ms cubic-bezier(0.23, 1, 0.32, 1);
@@ -1241,27 +1237,27 @@ body {
   border-radius: 2px;
 }
 
-.menu-button::before {
+.lines-button::before {
   content: '';
   margin-top: -8px;
 }
 
-.menu-button::after {
+.lines-button::after {
   content: '';
   margin-top: 8px;
 }
 
-#menu-toggle:checked + #hamburger .menu-button::before {
+#menu-toggle:checked + #hamburger .lines-button::before {
   margin-top: 0px;
   -webkit-transform: rotate(405deg);
           transform: rotate(405deg);
 }
 
-#menu-toggle:checked + #hamburger .menu-button {
+#menu-toggle:checked + #hamburger .lines-button {
   background: rgba(255, 255, 255, 0);
 }
 
-#menu-toggle:checked + #hamburger .menu-button::after {
+#menu-toggle:checked + #hamburger .lines-button::after {
   margin-top: 0px;
   -webkit-transform: rotate(-405deg);
           transform: rotate(-405deg);
@@ -1295,7 +1291,7 @@ body {
   #hamburger {
     display: block;
   }
-  .menu-button-container {
+  .mobile-menu-box {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -1319,16 +1315,14 @@ body {
   }
   #menu-toggle ~ .navs li {
     height: 0;
-    margin: 0;
-    padding: 0;
-    border: 0;
     -webkit-transition: height 400ms cubic-bezier(0.23, 1, 0.32, 1);
     transition: height 400ms cubic-bezier(0.23, 1, 0.32, 1);
+    border: 0;
+    margin: 0;
+    padding: 0;
   }
   #menu-toggle:checked ~ .navs li {
-    border: 1px solid #333;
-    height: 2.5em;
-    padding: 0.5em;
+    padding: 5px;
     -webkit-transition: height 400ms cubic-bezier(0.23, 1, 0.32, 1);
     transition: height 400ms cubic-bezier(0.23, 1, 0.32, 1);
   }
@@ -1340,10 +1334,9 @@ body {
         -ms-flex-pack: center;
             justify-content: center;
     margin: 0;
-    padding: 0.5em 0;
+    padding: 5px;
     width: 100%;
     color: white;
-    background-color: #222;
   }
   .navs > li:not(:last-child) {
     border-bottom: 1px solid #444;

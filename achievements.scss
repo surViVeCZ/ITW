@@ -1,5 +1,10 @@
+//project: ITW2
+//author: xpoucp01
+//date: 23.04.2022
+//section: ACHIEVEMENTS
+
 #achievements {
-	
+	//section nav: "moje úspěchy" "soutěže" - nav is always visible in section (position:sticky)
 	nav{
 		background-color: orange;
 		text-align: center;
@@ -12,6 +17,7 @@
 		margin: auto;
   		top: 6rem;
 		z-index: 300;
+		top: 0;
 		a {
 			padding-right: 50px;
 			padding-left: 50px;
@@ -36,10 +42,14 @@
 		font-size: 38px;
 		font-family: 'Comfortaa', cursive;
 	}
+
+	//image carousel of client's pictures
 	.carousel {
 		display: flex;
 		border-radius: 25px;
 	}
+
+	//previous image
 	.button_left {
 		width: min-content;
 		height: min-content;
@@ -61,6 +71,7 @@
 		}
 	}
 }
+//next image
 .button_right {
 	width: min-content;
 	height: min-content;
@@ -81,6 +92,7 @@
 		color: white;
 	}
 }
+//mobile view
 @media (max-width: 700px) {
 	#achievements{
 		.button_right{
