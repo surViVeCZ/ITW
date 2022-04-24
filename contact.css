@@ -39,6 +39,7 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  border-radius: 100%;
   font-size: 35px;
   min-width: 60px;
   height: 60px;
@@ -46,7 +47,6 @@
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  border-radius: 50%;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -59,7 +59,7 @@
   text-align: left;
   margin-top: -30px;
   margin-left: 40px;
-  font-size: 16px;
+  font-size: 15px;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
@@ -82,11 +82,12 @@
   display: -ms-flexbox;
   display: flex;
   position: relative;
-  padding: 20px 0;
+  padding-bottom: 0px;
+  padding-top: 25px;
 }
 
 .contact-me {
-  border-radius: 15px;
+  border-radius: 20px;
   width: 60%;
   padding: 40px;
   background: white;
@@ -105,12 +106,12 @@
 }
 
 .contact-me .input-line input {
-  width: 100%;
-  padding: 5px 0;
-  font-size: 16px;
-  margin: 10px 0;
   border: none;
   border-bottom: 2px solid black;
+  width: 100%;
+  padding: 5px 0;
+  margin: 10px 0;
+  font-size: 15px;
   outline: none;
 }
 
@@ -130,19 +131,19 @@
 
 .contact-me .input-line textarea {
   border: none;
-  font-size: 16px;
+  border-bottom: 2px solid black;
+  font-size: 15px;
   min-height: 40px;
   max-width: 100%;
   min-width: 100%;
   padding: 5px 0;
   margin: 10px 0;
-  border-bottom: 2px solid black;
   outline: none;
 }
 
 .contact-me .input-line textarea:valid ~ p {
   color: red;
-  font-size: 14px;
+  font-size: 15px;
   -webkit-transform: translateY(-20px);
           transform: translateY(-20px);
 }
@@ -155,13 +156,14 @@
 }
 
 .contact-me .input-line input[type="submit"] {
-  font-size: 18px;
+  font-size: 20px;
   width: 100px;
   background: orange;
   color: white;
   border: none;
   cursor: pointer;
   padding: 10px;
+  border-radius: 5px;
 }
 
 .contact-me .input-line input[type="submit"]:hover {
@@ -171,7 +173,7 @@
 .input-line p {
   position: absolute;
   left: 0;
-  font-size: 16px;
+  font-size: 15px;
   margin: -40px 0;
   width: auto;
   pointer-events: none;
@@ -183,7 +185,7 @@
 .input-line p.your_mes {
   position: absolute;
   left: 0;
-  font-size: 16px;
+  font-size: 15px;
   margin: -70px 0;
   width: auto;
   pointer-events: none;

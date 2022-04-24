@@ -61,9 +61,8 @@
 }
 
 .my_service .price {
-  background-color: #A09E9C;
   font-size: 25px;
-  letter-spacing: .2rem;
+  background-color: #A09E9C;
   color: orange;
 }
 
