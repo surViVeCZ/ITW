@@ -2,7 +2,7 @@
   padding-top: 60px;
   padding-bottom: 60px;
   background-color: black;
-  color: white;
+  color: white;   
   font-family: 'Comfortaa', cursive;
   text-align: center;
 }
@@ -26,7 +26,7 @@
   float: left;
   width: 280px;
   height: 280px;
-  -webkit-transition: all 0.5s linear;
+  -webkit-transition: all 0.5s linear;   
   transition: all 0.5s linear;
   margin-bottom: 40px;
 }
